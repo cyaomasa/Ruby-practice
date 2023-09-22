@@ -1,9 +1,8 @@
-apple = "Nagano"
+num = 0
 
-if apple == "Aomori"
-  puts "このリンゴは青森県産です。"
-elsif apple == "Nagano"
-  puts "このリンゴは青森県産ではなく、長野県産です。"
-else
-  puts "このリンゴは青森県産でも長野県産でもありません。"
+(1..20001).each do |n|
+  total = (n * (n + 1).to_f) / (n + (n + 1) * n + (n + 2))
+  num += total
 end
+
+puts num
